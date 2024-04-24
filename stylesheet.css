@@ -4,10 +4,12 @@ body {
     --main-color: #322424;
 }
 
-/* Using RGB */
+/* Using RGB, decoration, and align */
 
 h1 {
     color: rgb(235, 232, 228);
+    text-decoration: underline; /* Underline text */
+    text-align: center; /* Center text */
 }
 
 /* Using Hex */
@@ -55,4 +57,60 @@ button {
     width: 150px;
     height: 150px;
     padding: 30px;
+}
+
+/* Longhand margin notation */
+
+div {
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+/* Longhand padding notation */
+
+div {
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+/* Borders */
+div {
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+/* Makes the div a block-level element */
+div {
+    display: block; 
+    max-width: 500px;
+    min-width: 300px;
+}
+
+ /* Uses display: none on span */
+span {
+    display: none;
+}
+
+/* Shorthand padding notation */
+
+form {
+    padding: 10px 20px 10px 20px;
+}
+
+/* Shorthand margin notation */
+
+form {
+    margin: 10px 20px 30px 40px;
+}
+
+/* Auto margin notation */
+
+img {
+    margin: auto;
 }
