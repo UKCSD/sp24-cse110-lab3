@@ -93,6 +93,7 @@ div {
     border-radius: 5px;
 }
 
+
 /* Makes the div a block-level element, sets max and min widths, and sets the position to be relative */
 div {
     display: block; 
@@ -158,3 +159,5 @@ button:active {
         background-color: rgb(167, 205, 217); 
     }
 }  
+
+
