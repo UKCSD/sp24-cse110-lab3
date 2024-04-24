@@ -14,11 +14,16 @@ body {
 
 /* Using RGB, decoration, and align */
 
-h1 {
+.header {
     color: rgb(235, 232, 228);
     text-decoration: underline; /* Underline text */
     text-align: center; /* Center text */
 }
+
+input[type="text"] {
+    padding: 10px;
+}
+
 
 /* Using Hex */
 p {
@@ -34,6 +39,11 @@ p {
 h2 {
     color: color(display-p3 1 1 1);
 }
+
+* {
+    box-sizing: border-box;
+}
+
 
 /* color-mix */
 h3 {
@@ -51,7 +61,7 @@ p {
 }
 
 /* second use of relative units */
-footer {
+#summary {
     font-size: 1.1vh; 
 }
 
@@ -125,6 +135,35 @@ img {
     margin: auto;
 }
 
+h1, h2, h3 {
+    margin-top: 0;
+}
+
+/* Descendant Combinator */
+nav ul {
+    list-style-type: none;
+}
+
+/* Child Combinator */
+body > div {
+    padding: 20px;
+}
+
+/* General sibling combinator */
+h1 ~ p {
+    font-size: 1.25em;
+}
+
+/* Adjacent sibling combinator */
+h1 + p {
+    font-size: 1.25em;
+}
+
+/* Combining Two Selectors */
+p.container {
+    font-weight: bold;
+}
+
 /* Changes the a:hover to red */
 a:hover {
     color: red; 
@@ -150,6 +189,23 @@ button:active {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     align-items: start | end | center | stretch;
+}
+
+h1:has(+ p) {
+    margin-bottom: 0;
+  }
+
+  nav {
+    background-color: #333;
+
+    ul {
+        list-style-type: none;
+
+        li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+    }
 }
 
 
