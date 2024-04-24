@@ -1,3 +1,11 @@
+/* Import and use a font */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 /* Using a color/background*/
 body {
     background-color: rgb(110, 209, 216);
@@ -85,16 +93,18 @@ div {
     border-radius: 5px;
 }
 
-/* Makes the div a block-level element */
+/* Makes the div a block-level element, sets max and min widths, and sets the position to be relative */
 div {
     display: block; 
     max-width: 500px;
     min-width: 300px;
+    position: relative;
 }
 
- /* Uses display: none on span */
+ /* Uses display: none on span, and sets the position to be absolute */
 span {
     display: none;
+    position: absolute;
 }
 
 /* Shorthand padding notation */
@@ -114,3 +124,37 @@ form {
 img {
     margin: auto;
 }
+
+/* Changes the a:hover to red */
+a:hover {
+    color: red; 
+}
+
+/* Changes the button background color to blue when it's being activated (clicked) */
+button:active {
+    background-color: rgb(67, 169, 79); 
+}
+
+/* Enable Flexbox, distribute items evenly, and center them vertically */
+.container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    flex-direction: row | row-reverse | column | column-reverse;
+
+}
+
+/* Enable Grid, Create three equal columns, Add gap between grid items */
+.boxboxbox {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    align-items: start | end | center | stretch;
+}
+
+
+@media (max-width: 600px) {
+    body {
+        background-color: rgb(167, 205, 217); 
+    }
+}  
