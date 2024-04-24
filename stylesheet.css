@@ -1,0 +1,58 @@
+/* Using a color/background*/
+body {
+    background-color: rgb(110, 209, 216);
+    --main-color: #322424;
+}
+
+/* Using RGB */
+
+h1 {
+    color: rgb(235, 232, 228);
+}
+
+/* Using Hex */
+p {
+    color: #ebe7e0;
+}
+
+/* Using hsl */
+p {
+    hsl(1, 2, 3);
+}
+
+/* color */
+h2 {
+    color: color(display-p3 1 1 1);
+}
+
+/* color-mix */
+h3 {
+    color: color-mix(in srgb, plum 50%, purple);
+}
+
+/* CSS variable with fallback */
+body {
+    color: var(--main-color, rgb(0, 0, 0));
+}
+
+/* 1.5 times the size of the parent element's font, 1 use of relative units */
+p {
+    font-size: 1.5em; 
+}
+
+/* second use of relative units */
+footer {
+    font-size: 1.1vh; 
+}
+
+/* third use of relative units */
+li {
+    font-size: 1vmin; 
+}
+
+/* 3 uses of absolute units  to customize button size*/
+button {
+    width: 150px;
+    height: 150px;
+    padding: 30px;
+}
